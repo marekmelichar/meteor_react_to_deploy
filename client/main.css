@@ -11,6 +11,8 @@ a:visited {
 }
 
 .header {
+  text-align: center;
+  position: relative;
   background-color: #384E6C;
   box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.3);
 }
@@ -47,25 +49,25 @@ a:visited {
   margin-right: 0;
 }
 
-.btn-custom {
+.header .btn-custom {
   position: relative;
-  margin: 14px 0 14px 28%;
-  padding: 15px 55px 15px 20px;
+  margin: 14px 0;
+  padding: 10px 60px 10px 20px;
   color: #FFF;
   background-color: #2DB5CF;
   border-color: #2DB5CF;
   border-radius: 0;
 }
 
-.btn-custom:hover,
-.btn-custom:focus {
+.header .btn-custom:hover,
+.header .btn-custom:focus {
   color: #FFF;
 }
 
-.pencil-icon {
+.header .pencil-icon {
   position: absolute;
-  top: 18%;
-  right: 6%;
+  top: 9%;
+  right: 7%;
 }
 
 .list-of-posts .list-group-item {
@@ -191,9 +193,98 @@ a:visited {
 
 
 /*
+********* HEADER
+*/
+
+.logo .heading {
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+}
+
+
+
+/*
 ******** HELPERS
 */
 
 .bottom_1 {
   margin-bottom: 1em;
+}
+
+
+
+
+
+/*
+********* MEDIA QUERIES
+*/
+
+@media screen and (max-width: 1150px) {
+
+.header .logo {
+  width: 100%;
+}
+
+.header .btn-custom {
+  float: left;
+  position: relative;
+  margin: 14px 0 14px 18%;
+}
+
+.header .navbar-right {
+  margin: 26px 0 0 0;
+  float: right;
+}
+
+.main-page form {
+  max-width: 75%;
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+.header .logo {
+  width: 100%;
+  margin: 0 0 0 28%;
+}
+
+.header .btn-custom {
+  float: left;
+  position: relative;
+  margin: 14px 0 14px 29%;
+}
+
+.header .navbar-right {
+  margin: 26px 41% 0 0;
+  float: right;
+}
+
+}
+
+@media screen and (max-width: 320px) {
+
+.header .logo {
+  width: 100%;
+  margin: 0 0 0 17%;
+}
+
+.header .btn-custom {
+  float: left;
+  position: relative;
+  margin: 14px 0 14px 18%;
+}
+
+.header .navbar-right {
+  margin: 26px 35% 0 0;
+  float: right;
+}
+
 }
