@@ -1,1 +1,86 @@
 /* CSS declarations go here */
+a {
+  cursor: pointer;
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #384E6C;
+  box-shadow: 0px 2px 5px 3px rgba(0,0,0,0.3);
+}
+
+.logo {
+  width: 20%;
+}
+
+.logo a {
+  color: #fff;
+}
+
+.logo .heading {
+  float: left;
+  margin: 22px 0 0 0;
+}
+
+.logo .icon {
+  float: left;
+  margin: 20px 0 15px 15px;
+}
+
+.header ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header ul li a {
+  color: #fff;
+}
+
+.header .navbar-right {
+  margin: 26px 0 0 0;
+  margin-right: 0;
+}
+
+.btn-custom {
+  position: relative;
+  margin: 14px 0 14px 28%;
+  padding: 15px 55px 15px 20px;
+  color: #FFF;
+  background-color: #2DB5CF;
+  border-color: #2DB5CF;
+  border-radius: 0;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  color: #FFF;
+}
+
+.pencil {
+  position: absolute;
+  top: 18%;
+  right: 6%;
+}
+
+.list-of-posts .list-group-item {
+  height: 55px;
+}
+
+.post-share {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.post-share .input-group {
+  width: 30%;
+}
