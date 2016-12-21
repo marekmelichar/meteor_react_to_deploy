@@ -70,7 +70,6 @@ class PostsList extends Component {
   }
 
   render() {
-    console.log(this.props.posts);
     let content = [];
     if (User.isLoggedIn()) {
       content.push(

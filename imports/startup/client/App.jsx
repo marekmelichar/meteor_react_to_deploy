@@ -28,7 +28,7 @@ const routes = (
 
 Meteor.startup(() => {
   ReactDOM.render(
-    routes, document.getElementById('main')
+    routes, document.getElementById('react')
   );
 });
 
